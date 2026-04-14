@@ -1,0 +1,86 @@
+* {box-sizing: border-box;}
+/*3px solid rgb(205,206,199)*/
+/* General */
+body {
+    max-width: 2900px;
+    display: flex;
+    margin: 0 auto;
+    background-color: rgb(229, 230, 223);
+    font-size: 19px;
+}
+
+h2, h3 {
+    color: rgb(255, 142, 146);
+    font-family: 'Playfair Display', serif;
+    text-shadow: 0px 0px 1.5px rgb(255, 142, 146);
+}
+
+p {
+    color: rgb(167, 169, 158);
+    font-family: 'Playfair Display', serif;
+    text-shadow: 0px 0px 1px rgb(167, 169, 158);
+}
+
+a {
+    color: rgb(255, 142, 146);
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0px 0px 2px rgb(255, 142, 146);
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedores */
+.parte-izquierda {
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+
+    .parte-izquierda-header {
+        width: 100%;
+        display: flex; align-items: center; justify-content: space-around;
+        border-bottom: 3px solid rgb(205,206,199);
+    }
+
+    .parte-izquierda-main {
+        width: 100%;
+        display: flex; flex-direction: column;
+        padding: 2rem;
+    }
+        .proyectos {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.5rem;
+            }
+            .proyecto {
+                border: 3px solid rgb(255, 142, 146);
+                padding: 1rem;
+                box-shadow: 0px 0px 6px rgb(255, 142, 146);
+            }
+                .proyecto img {
+                    height: 20rem;
+                    width: 37rem;
+                }
+.parte-derecha {
+    width: 100%;
+    padding-top: 2rem; padding-left: 1.5rem;
+    display: flex; flex-direction: column; align-items: center;
+    gap: 2rem;
+    border-left: 3px solid rgb(205,206,199);
+}
+    .parte-derecha img {
+        height: 13rem;
+        width: 10rem;
+        border-radius: 10%;
+        border: 3px solid rgb(255, 142, 146);
+        box-shadow: 0px 0px 6px rgb(255, 142, 146);
+    }
+
+.menu {
+    display: flex; flex-direction: column;
+    gap: 5rem;
+    align-self: center;
+    text-align: center;
+}
